@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.movieticketingsystem.java.controller.RegisterController">
+   <children>
+      <Label layoutX="277.0" layoutY="42.0" text="注册">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginName" layoutX="199.0" layoutY="98.0" promptText="账号" />
+      <PasswordField fx:id="password" layoutX="199.0" layoutY="150.0" promptText="密码" />
+      <PasswordField fx:id="confirmPassword" layoutX="199.0" layoutY="201.0" promptText="再次输入" />
+      <TextField fx:id="phoneNumber" layoutX="199.0" layoutY="255.0" promptText="手机号" />
+      <Button fx:id="registerBtn" layoutX="200.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#registerBtnOnMouseClicked" prefHeight="30.0" prefWidth="200.0" text="注册" />
+      <Label fx:id="backBtn" layoutX="270.0" layoutY="349.0" onMouseClicked="#backBtnOnMouseClicked" onMouseEntered="#backBtnOnMouseEntered" onMouseExited="#backBtnOnMouseExited" text="点击返回" />
+   </children>
+</AnchorPane>

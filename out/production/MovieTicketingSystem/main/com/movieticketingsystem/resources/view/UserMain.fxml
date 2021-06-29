@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.movieticketingsystem.java.controller.UserMainController">
+   <children>
+      <Label fx:id="home" layoutX="22.0" layoutY="14.0" onMouseClicked="#homeOnMouseClicked" onMouseEntered="#homeOnMouseEntered" onMouseExited="#homeOnMouseExited" text="首页" />
+      <Label layoutX="62.0" layoutY="12.0" text="|" />
+      <Label fx:id="myOrder" layoutX="77.0" layoutY="14.0" onMouseClicked="#myOrderOnMouseClicked" onMouseEntered="#myOrderOnMouseEntered" onMouseExited="#myOrderOnMouseExited" text="我的订单" />
+      <ListView fx:id="mainListView" layoutX="22.0" layoutY="67.0" prefHeight="510.0" prefWidth="955.0" styleClass="listView" stylesheets="@../static/style/userMain.css" />
+      <MenuButton fx:id="userMenu" layoutX="926.0" layoutY="16.0" mnemonicParsing="false" opacity="0.5" prefHeight="32.0" prefWidth="32.0" styleClass="userMenu" stylesheets="@../static/style/userMain.css" text="MenuButton">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../static/img/user.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </MenuButton>
+   </children>
+</AnchorPane>

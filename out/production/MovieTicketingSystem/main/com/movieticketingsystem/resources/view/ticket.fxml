@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.movieticketingsystem.java.controller.TicketController">
+   <children>
+      <ImageView fx:id="cover" fitHeight="168.0" fitWidth="259.0" layoutX="71.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/img/3DMovie.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="movieName" layoutX="171.0" layoutY="173.0" text="电影名字" />
+      <ListView fx:id="sessionListView" layoutX="14.0" layoutY="219.0" prefHeight="260.0" prefWidth="372.0" styleClass="listView" stylesheets="@../static/style/userMain.css" />
+   </children>
+</AnchorPane>

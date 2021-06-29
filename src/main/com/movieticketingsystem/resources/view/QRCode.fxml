@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.movieticketingsystem.java.controller.QRCodeController">
+   <children>
+      <ImageView fitHeight="601.0" fitWidth="596.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../static/img/QRCode.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="paidBtn" layoutX="266.0" layoutY="656.0" mnemonicParsing="false" onMouseClicked="#paidBtnOnMouseClicked" text="已付款" />
+      <Label layoutX="248.0" layoutY="625.0" text="扫描二维码付款" />
+   </children>
+</AnchorPane>
